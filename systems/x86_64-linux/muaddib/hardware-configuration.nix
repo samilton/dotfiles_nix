@@ -15,7 +15,7 @@
 
   fileSystems."/" =
     { device = "/dev/disk/by-uuid/079a14da-c89b-4752-bc6a-f87f45abe5ac";
-      fsType = "ext4";
+      fsType = "btrfs";
     };
 
   boot.initrd.luks.devices."luks-80acf474-3ecd-49e6-93cb-f67017727034".device = "/dev/disk/by-uuid/80acf474-3ecd-49e6-93cb-f67017727034";
