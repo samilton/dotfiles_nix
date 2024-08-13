@@ -37,7 +37,7 @@
 
       systems.modules.nixos = with inputs; [
         home-manager.nixosModules.home-manager
-	disko.nixoxModules.disko
+	disko.nixosModules.disko
       ];
 
       systems.modules.muaddib.modules = with inputs; [
