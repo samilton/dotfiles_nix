@@ -134,6 +134,7 @@
 
       systems.modules.nixos = with inputs; [
         home-manager.nixosModules.home-manager
+	stylix.nixosModules.stylix
 	disko.nixosModules.disko
 	sops-nix.nixosModules.sops
       ];
