@@ -35,6 +35,16 @@
     inherit inputs;
     src = ./.;
 
+    snowfall = {
+    	metadata = "nixicle";
+	namespace = "nixicle";
+	meta = {
+	  name = "nixicle";
+	  title = "Sam's Nix Flake";
+
+	};
+    };
+
       systems.modules.nixos = with inputs; [
         home-manager.nixosModules.home-manager
 	disko.nixosModules.disko
