@@ -35,7 +35,7 @@
                 # https://0pointer.net/blog/unlocking-luks2-volumes-with-tpm2-fido2-pkcs11-security-hardware-on-systemd-248.html
                 settings = {crypttabExtraOpts = ["fido2-device=auto" "token-timeout=10"];};
                 content = {
-                  type = "btrfs";
+                  type = "ext4";
                   extraArgs = ["-L" "nixos" "-f"];
                   subvolumes = {
                     "/root" = {
