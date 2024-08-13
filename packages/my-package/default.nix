@@ -16,5 +16,6 @@
 }:
 
 stdenv.mkDerivation {
+    name = "my-package";
     # Create your package
 }
