@@ -137,6 +137,9 @@
 	stylix.nixosModules.stylix
 	disko.nixosModules.disko
 	sops-nix.nixosModules.sops
+	lanzaboote.nixosModules.lanzaboote
+        impermanence.nixosModules.impermanence
+
       ];
 
       systems.modules.muaddib.modules = with inputs; [
