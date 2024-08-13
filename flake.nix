@@ -33,6 +33,88 @@
       url = "github:snowfallorg/lib";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+        impermanence.url = "github:nix-community/impermanence";
+    lanzaboote.url = "github:nix-community/lanzaboote";
+
+    nixgl.url = "github:nix-community/nixGL";
+    stylix.url = "github:danth/stylix";
+    catppuccin.url = "github:catppuccin/nix";
+    nix-index-database.url = "github:nix-community/nix-index-database";
+
+    nixos-anywhere = {
+      url = "github:numtide/nixos-anywhere";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.disko.follows = "disko";
+    };
+
+    nixos-generators = {
+      url = "github:nix-community/nixos-generators";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    comma = {
+      url = "github:nix-community/comma";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    hypr-contrib = {
+      url = "github:hyprwm/contrib";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    hyprcursor = {
+      url = "github:hyprwm/Hyprcursor";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    pyprland = {
+      url = "github:hyprland-community/pyprland";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    hyprland-git.url = "github:hyprwm/hyprland";
+    hyprland-xdph-git.url = "github:hyprwm/xdg-desktop-portal-hyprland";
+    hyprland-protocols-git.url = "github:hyprwm/xdg-desktop-portal-hyprland";
+    hyprland-nix.url = "github:spikespaz/hyprland-nix";
+    hyprland-nix.inputs = {
+      hyprland.follows = "hyprland-git";
+      hyprland-xdph.follows = "hyprland-xdph-git";
+      hyprland-protocols.follows = "hyprland-protocols-git";
+    };
+
+    nixvim = {
+      url = "github:nix-community/nixvim";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    attic = {
+      url = "github:zhaofengli/attic";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    firefox-gnome-theme = {
+      url = "github:rafaelmardojai/firefox-gnome-theme";
+      flake = false;
+    };
+
+    zjstatus = {
+      url = "github:dj95/zjstatus";
+    };
+
+    gx-nvim = {
+      url = "github:chrishrb/gx.nvim";
+      flake = false;
+    };
+    maximize-nvim = {
+      url = "github:declancm/maximize.nvim";
+      flake = false;
+    };
+    advanced-git-search-nvim = {
+      url = "github:aaronhallaert/advanced-git-search.nvim";
+      flake = false;
+    };
+
   };
 
   outputs = inputs:
